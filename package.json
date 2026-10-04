@@ -1,0 +1,48 @@
+{
+  "name": "openapi-result",
+  "version": "0.1.0",
+  "description": "Typed OpenAPI client with a never-throwing Result union and bounded RFC 7807 problem normalization.",
+  "type": "module",
+  "license": "MIT",
+  "author": "m1chlcz",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    },
+    "./problem": {
+      "types": "./dist/problem.d.ts",
+      "default": "./dist/problem.js"
+    }
+  },
+  "bin": {
+    "openapi-result-sync": "./bin/openapi-result-sync.mjs"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "typescript": "6.0.3",
+    "vitest": "4.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M1chlCZ/openapi-result.git"
+  },
+  "homepage": "https://github.com/M1chlCZ/openapi-result#readme",
+  "bugs": "https://github.com/M1chlCZ/openapi-result/issues"
+}
