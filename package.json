@@ -1,6 +1,6 @@
 {
   "name": "openapi-result",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typed OpenAPI client with a never-throwing Result union and bounded RFC 7807 problem normalization.",
   "type": "module",
   "license": "MIT",
@@ -35,7 +35,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@types/node": "24.13.6",
+    "@types/node": "^26.6.5",
     "typescript": "6.0.3",
     "vitest": "4.1.11"
   },
